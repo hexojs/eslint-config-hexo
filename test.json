@@ -1,5 +1,5 @@
 {
-  "extend": "./eslint.json",
+  "extends": "./eslint.json",
   "rules": {
     "no-unused-expressions": 0
   },
