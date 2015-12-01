@@ -1,0 +1,13 @@
+{
+  "name": "eslint-config-hexo",
+  "version": "1.0.0",
+  "description": "ESLint config for Hexo projects",
+  "repository": "hexojs/eslint-config-hexo",
+  "homepage": "http://hexo.io/",
+  "keywords": [
+    "hexo",
+    "eslint-config"
+  ],
+  "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "license": "MIT"
+}
