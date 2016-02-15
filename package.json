@@ -8,7 +8,7 @@
     "hexo",
     "eslint-config"
   ],
-  "main": "eslint.json",
+  "main": "eslint.js",
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "license": "MIT"
 }
