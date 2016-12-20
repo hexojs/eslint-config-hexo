@@ -10,5 +10,8 @@
   ],
   "main": "eslint.js",
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
-  "license": "MIT"
+  "license": "MIT",
+  "peerDependencies": {
+    "eslint": "2 || 1"
+  }
 }
