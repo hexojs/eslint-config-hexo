@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hexo",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "ESLint config for Hexo projects",
   "repository": "hexojs/eslint-config-hexo",
   "homepage": "http://hexo.io/",
@@ -10,6 +10,7 @@
   ],
   "main": "eslint.js",
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
+  "contributors": ["Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"],
   "license": "MIT",
   "peerDependencies": {
     "eslint": "2 || 1"

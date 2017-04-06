@@ -1,5 +1,6 @@
 module.exports = {
   extends: 'eslint:recommended',
+  parser: 'babel-eslint',
   rules: {
     'curly': [2, 'multi-line'],
     'no-console': 0,
@@ -36,7 +37,7 @@ module.exports = {
       vars: 'all',
       args: 'none'
     }],
-    strict: [2, 'global']
+    strict: 0
   },
   env: {
     node: true
