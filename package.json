@@ -17,7 +17,7 @@
   "peerDependencies": {
     "eslint": "2 || 1"
   }
-  "devDependencies":{
+  "devDependencies": {
     "babel-eslint": "^7.2.1"
   }
 }
