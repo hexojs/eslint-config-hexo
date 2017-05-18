@@ -16,7 +16,7 @@
   "license": "MIT",
   "peerDependencies": {
     "eslint": "2 || 1"
-  }
+  },
   "devDependencies": {
     "babel-eslint": "^7.2.1"
   }
