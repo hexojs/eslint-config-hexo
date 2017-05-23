@@ -1,4 +1,5 @@
 # eslint-config-hexo
+[![npm version](https://badge.fury.io/js/eslint-config-hexo.svg)](https://badge.fury.io/js/eslint-config-hexo)
 
 ESLint config for Hexo projects
 
