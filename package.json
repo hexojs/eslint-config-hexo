@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hexo",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "ESLint config for Hexo projects",
   "repository": "hexojs/eslint-config-hexo",
   "homepage": "http://hexo.io/",
@@ -14,10 +14,10 @@
     "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
     ],
   "license": "MIT",
+  "dependencies": {
+    "babel-eslint": "^7.2.1"
+  },
   "peerDependencies": {
     "eslint": "2 || 1"
-  },
-  "devDependencies": {
-    "babel-eslint": "^7.2.1"
   }
 }
