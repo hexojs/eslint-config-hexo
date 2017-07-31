@@ -1,7 +1,7 @@
 module.exports = {
   extends: './eslint.js',
   rules: {
-    'no-unused-expressions': 0
+    'no-unused-expressions': 'off'
   },
   env: {
     mocha: true
