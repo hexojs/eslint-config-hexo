@@ -1,5 +1,6 @@
 module.exports = {
-  extends: 'eslint:recommended',
+  extends: ['eslint:recommended', 'plugin:node/recommended'],
+  plugins: ['node'],
   rules: {
     'curly': ['error', 'multi-line'],
     'no-console': 'off',
