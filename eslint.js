@@ -19,7 +19,6 @@ module.exports = {
     'no-loop-func': 'error',
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
-    'no-native-reassign': 'error',
     'no-new-wrappers': 'error',
     'no-redeclare': 'error',
     'no-return-assign': 'error',
@@ -74,7 +73,7 @@ module.exports = {
       before: false,
       after: true
     }],
-    'no-spaced-func': 'error',
+    'func-call-spacing': 'error',
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': ['error', 'never'],
     'comma-dangle': ['error', 'never'],
