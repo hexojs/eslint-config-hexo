@@ -21,6 +21,7 @@ module.exports = {
     'no-multi-str': 'error',
     'no-native-reassign': 'error',
     'no-new-wrappers': 'error',
+    'no-redeclare': 'error',
     'no-return-assign': 'error',
     'no-throw-literal': 'error',
     'no-unused-expressions': ['error', {
@@ -32,7 +33,10 @@ module.exports = {
     'no-with': 'error',
     'radix': 'error',
     'no-self-compare': 'error',
-    'no-unused-vars': ['error', { args: 'none' }],
+    'no-unused-vars': ['error', {
+      vars: 'all',
+      args: 'none'
+    }],
     'indent': ['error', 2, {
       SwitchCase: 1
     }],
@@ -45,6 +49,7 @@ module.exports = {
     'brace-style': ['error', '1tbs', {
       allowSingleLine: true
     }],
+    'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': 'error',
     'no-multi-str': 'error',
     'one-var': ['error', {
@@ -87,6 +92,7 @@ module.exports = {
       returnAssign: false,
       nestedBinaryExpressions: false
     }],
+    'no-unsafe-negation': 'error',
     'array-callback-return': 'error',
     'no-empty-pattern': 'error',
     'no-eval': 'error',
