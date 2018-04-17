@@ -63,6 +63,18 @@ module.exports = {
     'no-path-concat': 'error',
     // Stylistic Issues
     // ECMAScript 6
+    'arrow-spacing': 'error',
+    'generator-star-spacing': ['error', 'after'],
+    'no-confusing-arrow': ['error', {
+      allowParens: true
+    }],
+    'no-duplicate-imports': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-rename': 'error',
+    'rest-spread-spacing': ['error', 'never'],
+    'template-curly-spacing': ['error', 'never'],
+    'yield-star-spacing': ['error', 'after'],
     // other
     'indent': ['error', 2, {
       SwitchCase: 1
@@ -121,19 +133,7 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'spaced-comment': ['error', 'always'],
     'template-tag-spacing': ['error', 'never'],
-    'unicode-bom': ['error', 'never'],
-    'arrow-spacing': 'error',
-    'generator-star-spacing': ['error', 'after'],
-    'no-confusing-arrow': ['error', {
-      allowParens: true
-    }],
-    'no-duplicate-imports': 'error',
-    'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
-    'no-useless-rename': 'error',
-    'rest-spread-spacing': ['error', 'never'],
-    'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after']
+    'unicode-bom': ['error', 'never']
   },
   env: {
     node: true,
