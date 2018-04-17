@@ -59,8 +59,9 @@ module.exports = {
     'no-use-before-define': ['error', 'nofunc'],
     // Node.js and CommonJS
     'handle-callback-err': 'error',
-    // Stylistic Issues
+    'no-mixed-operators': 'error',
     'no-path-concat': 'error',
+    // Stylistic Issues
     // ECMAScript 6
     // other
     'indent': ['error', 2, {
@@ -132,8 +133,7 @@ module.exports = {
     'no-useless-rename': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after'],
-    'no-mixed-operators': 'error'
+    'yield-star-spacing': ['error', 'after']
   },
   env: {
     node: true,
