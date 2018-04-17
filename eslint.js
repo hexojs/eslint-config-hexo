@@ -53,7 +53,9 @@ module.exports = {
     // Strict Mode
     'strict': 'error',
     // Variables
+    'no-label-var': 'error',
     'no-shadow-restricted-names': 'error',
+    'no-undef-init': 'error',
     'no-use-before-define': ['error', 'nofunc'],
     // Node.js and CommonJS
     'handle-callback-err': 'error',
@@ -103,8 +105,6 @@ module.exports = {
     'keyword-spacing': ['error', {}],
     'space-before-blocks': ['error', 'always'],
     'no-extra-label': 'error',
-    'no-label-var': 'error',
-    'no-undef-init': 'error',
     'array-bracket-spacing': ['error', 'never'],
     'computed-property-spacing': ['error', 'never'],
     'block-spacing': ['error', 'always'],
