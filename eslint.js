@@ -62,29 +62,11 @@ module.exports = {
     'no-mixed-operators': 'error',
     'no-path-concat': 'error',
     // Stylistic Issues
-    // ECMAScript 6
-    'arrow-spacing': 'error',
-    'generator-star-spacing': ['error', 'after'],
-    'no-confusing-arrow': ['error', {
-      allowParens: true
-    }],
-    'no-duplicate-imports': 'error',
-    'no-useless-computed-key': 'error',
-    'no-useless-constructor': 'error',
-    'no-useless-rename': 'error',
-    'rest-spread-spacing': ['error', 'never'],
-    'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after'],
-    // other
-    'indent': ['error', 2, {
-      SwitchCase: 1
-    }],
+    'indent': ['error', 2, { SwitchCase: 1 }],
     'linebreak-style': ['error', 'unix'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
-    'brace-style': ['error', '1tbs', {
-      allowSingleLine: true
-    }],
+    'brace-style': ['error', '1tbs', { allowSingleLine: true }],
     'no-multiple-empty-lines': 'error',
     'one-var': ['error', {
       uninitialized: 'always',
@@ -121,9 +103,7 @@ module.exports = {
     'array-bracket-spacing': ['error', 'never'],
     'computed-property-spacing': ['error', 'never'],
     'block-spacing': ['error', 'always'],
-    'lines-around-comment': ['error', {
-      beforeBlockComment: true
-    }],
+    'lines-around-comment': ['error', { beforeBlockComment: true }],
     'new-cap': 'error',
     'new-parens': 'error',
     'no-array-constructor': 'error',
@@ -133,7 +113,18 @@ module.exports = {
     'no-whitespace-before-property': 'error',
     'spaced-comment': ['error', 'always'],
     'template-tag-spacing': ['error', 'never'],
-    'unicode-bom': ['error', 'never']
+    'unicode-bom': ['error', 'never'],
+    // ECMAScript 6
+    'arrow-spacing': 'error',
+    'generator-star-spacing': ['error', 'after'],
+    'no-confusing-arrow': ['error', { allowParens: true }],
+    'no-duplicate-imports': 'error',
+    'no-useless-computed-key': 'error',
+    'no-useless-constructor': 'error',
+    'no-useless-rename': 'error',
+    'rest-spread-spacing': ['error', 'never'],
+    'template-curly-spacing': ['error', 'never'],
+    'yield-star-spacing': ['error', 'after']
   },
   env: {
     node: true,
