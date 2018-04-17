@@ -62,55 +62,55 @@ module.exports = {
     'no-mixed-operators': 'error',
     'no-path-concat': 'error',
     // Stylistic Issues
-    'indent': ['error', 2, { SwitchCase: 1 }],
-    'linebreak-style': ['error', 'unix'],
-    'quotes': ['error', 'single'],
-    'semi': ['error', 'always'],
+    'array-bracket-spacing': ['error', 'never'],
+    'block-spacing': ['error', 'always'],
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'comma-dangle': ['error', 'never'],
+    'comma-spacing': ['error', {
+      before: false,
+      after: true
+    }],
+    'comma-style': ['error', 'last'],
+    'computed-property-spacing': ['error', 'never'],
+    'eol-last': 'error',
+    'func-call-spacing': 'error',
+    'indent': ['error', 2, { SwitchCase: 1 }],
+    'key-spacing': ['error', {
+      beforeColon: false,
+      afterColon: true
+    }],
+    'keyword-spacing': ['error', {}],
+    'linebreak-style': ['error', 'unix'],
+    'lines-around-comment': ['error', { beforeBlockComment: true }],
+    'new-cap': 'error',
+    'new-parens': 'error',
+    'no-array-constructor': 'error',
+    'no-extra-label': 'error',
     'no-multiple-empty-lines': 'error',
+    'no-nested-ternary': 'error',
+    'no-new-object': 'error',
+    'no-trailing-spaces': 'error',
+    'no-unneeded-ternary': 'error',
+    'no-whitespace-before-property': 'error',
     'one-var': ['error', {
       uninitialized: 'always',
       initialized: 'never'
     }],
     'operator-linebreak': ['error', 'before'],
-    'key-spacing': ['error', {
-      beforeColon: false,
-      afterColon: true
-    }],
-    'space-unary-ops': ['error', {
-      words: false,
-      nonwords: false
-    }],
-    'comma-spacing': ['error', {
-      before: false,
-      after: true
-    }],
+    'quotes': ['error', 'single'],
+    'semi': ['error', 'always'],
     'semi-spacing': ['error', {
       before: false,
       after: true
     }],
-    'func-call-spacing': 'error',
+    'space-before-blocks': ['error', 'always'],
     'space-before-function-paren': ['error', 'never'],
     'space-in-parens': ['error', 'never'],
-    'comma-dangle': ['error', 'never'],
-    'no-trailing-spaces': 'error',
-    'comma-style': ['error', 'last'],
-    'eol-last': 'error',
     'space-infix-ops': 'error',
-    'keyword-spacing': ['error', {}],
-    'space-before-blocks': ['error', 'always'],
-    'no-extra-label': 'error',
-    'array-bracket-spacing': ['error', 'never'],
-    'computed-property-spacing': ['error', 'never'],
-    'block-spacing': ['error', 'always'],
-    'lines-around-comment': ['error', { beforeBlockComment: true }],
-    'new-cap': 'error',
-    'new-parens': 'error',
-    'no-array-constructor': 'error',
-    'no-nested-ternary': 'error',
-    'no-new-object': 'error',
-    'no-unneeded-ternary': 'error',
-    'no-whitespace-before-property': 'error',
+    'space-unary-ops': ['error', {
+      words: false,
+      nonwords: false
+    }],
     'spaced-comment': ['error', 'always'],
     'template-tag-spacing': ['error', 'never'],
     'unicode-bom': ['error', 'never'],
