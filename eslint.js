@@ -2,8 +2,12 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:node/recommended'],
   plugins: ['node'],
   rules: {
-    'curly': ['error', 'multi-line'],
+    // override recomennded
     'no-console': 'off',
+    'no-empty': ['error', { allowEmptyCatch: true }],
+    'no-unused-vars': ['error', { args: 'none' }],
+    // end override recomennded
+    'curly': ['error', 'multi-line'],
     'no-path-concat': 'error',
     'handle-callback-err': 'error',
     'no-use-before-define': ['error', 'nofunc'],
@@ -20,7 +24,6 @@ module.exports = {
     'no-multi-spaces': 'error',
     'no-multi-str': 'error',
     'no-new-wrappers': 'error',
-    'no-redeclare': 'error',
     'no-return-assign': 'error',
     'no-throw-literal': 'error',
     'no-unused-expressions': ['error', {
@@ -32,23 +35,15 @@ module.exports = {
     'no-with': 'error',
     'radix': 'error',
     'no-self-compare': 'error',
-    'no-unused-vars': ['error', {
-      vars: 'all',
-      args: 'none'
-    }],
     'indent': ['error', 2, {
       SwitchCase: 1
     }],
     'linebreak-style': ['error', 'unix'],
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
-    'no-empty': ['error', {
-      allowEmptyCatch: true
-    }],
     'brace-style': ['error', '1tbs', {
       allowSingleLine: true
     }],
-    'no-mixed-spaces-and-tabs': 'error',
     'no-multiple-empty-lines': 'error',
     'no-multi-str': 'error',
     'one-var': ['error', {
@@ -91,9 +86,7 @@ module.exports = {
       returnAssign: false,
       nestedBinaryExpressions: false
     }],
-    'no-unsafe-negation': 'error',
     'array-callback-return': 'error',
-    'no-empty-pattern': 'error',
     'no-eval': 'error',
     'no-extra-label': 'error',
     'no-implicit-globals': 'error',
