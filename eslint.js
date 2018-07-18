@@ -1,6 +1,5 @@
 module.exports = {
   extends: ['eslint:recommended', 'plugin:node/recommended'],
-  plugins: ['node'],
   rules: {
     // override recomennded
     'no-console': 'off',
@@ -18,11 +17,13 @@ module.exports = {
     'curly': ['error', 'multi-line'],
     'dot-location': ['error', 'property'],
     'dot-notation': 'error',
+    /** eqeqeq Deprecated option. @see https://github.com/hexojs/eslint-config-hexo/issues/8 */
     'eqeqeq': ['error', 'allow-null'],
     'no-else-return': 'error',
     'no-eval': 'error',
     'no-extend-native': 'error',
     'no-extra-bind': 'error',
+    'no-extra-label': 'error',
     'no-implicit-globals': 'error',
     'no-implied-eval': 'error',
     'no-lone-blocks': 'error',
@@ -59,7 +60,6 @@ module.exports = {
     'no-use-before-define': ['error', 'nofunc'],
     // Node.js and CommonJS
     'handle-callback-err': 'error',
-    'no-mixed-operators': 'error',
     'no-path-concat': 'error',
     // Stylistic Issues
     'array-bracket-spacing': ['error', 'never'],
@@ -79,13 +79,13 @@ module.exports = {
       beforeColon: false,
       afterColon: true
     }],
-    'keyword-spacing': ['error', {}],
+    'keyword-spacing': 'error',
     'linebreak-style': ['error', 'unix'],
     'lines-around-comment': ['error', { beforeBlockComment: true }],
     'new-cap': 'error',
     'new-parens': 'error',
     'no-array-constructor': 'error',
-    'no-extra-label': 'error',
+    'no-mixed-operators': 'error',
     'no-multiple-empty-lines': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
@@ -125,12 +125,5 @@ module.exports = {
     'rest-spread-spacing': ['error', 'never'],
     'template-curly-spacing': ['error', 'never'],
     'yield-star-spacing': ['error', 'after']
-  },
-  env: {
-    node: true,
-    es6: true
-  },
-  parserOptions: {
-    ecmaVersion: 6
   }
 };
