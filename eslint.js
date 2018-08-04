@@ -9,8 +9,7 @@ module.exports = {
     'array-callback-return': 'error',
     'block-scoped-var': 'error',
     'dot-notation': 'error',
-    /** eqeqeq Deprecated option. @see https://github.com/hexojs/eslint-config-hexo/issues/8 */
-    'eqeqeq': ['error', 'allow-null'],
+    'eqeqeq': ['error', 'always', { null: 'ignore' }],
     'no-else-return': 'error',
     'no-eval': 'error',
     'no-extend-native': 'error',
@@ -40,7 +39,7 @@ module.exports = {
     'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
     'radix': 'error',
-    'yoda': ['error', 'never'],
+    'yoda': 'error',
     // Strict Mode
     'strict': 'error',
     // Variables
@@ -52,7 +51,7 @@ module.exports = {
     'handle-callback-err': 'error',
     'no-path-concat': 'error',
     // Stylistic Issues
-    'linebreak-style': ['error', 'unix'],
+    'linebreak-style': 'error',
     'new-cap': 'error',
     'new-parens': 'error',
     'no-array-constructor': 'error',
@@ -63,7 +62,7 @@ module.exports = {
       uninitialized: 'always',
       initialized: 'never'
     }],
-    'spaced-comment': ['error', 'always'],
+    'spaced-comment': 'error',
     // ECMAScript 6
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
