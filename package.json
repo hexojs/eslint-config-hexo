@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-hexo",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "ESLint config for Hexo projects",
   "repository": "hexojs/eslint-config-hexo",
   "homepage": "https://hexo.io/",
