@@ -9,6 +9,9 @@
     "eslint-config"
   ],
   "main": "eslint.js",
+  "files": [
+    "eslint.js"
+  ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
     "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"

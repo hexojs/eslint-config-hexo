@@ -2,7 +2,7 @@ module.exports = {
   extends: ['eslint:recommended', 'plugin:node/recommended'],
   plugins: ['node'],
   rules: {
-    // override recomennded
+    // override recommended
     'no-console': 'off',
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-unused-vars': ['error', { args: 'none' }],
