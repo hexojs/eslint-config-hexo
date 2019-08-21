@@ -124,7 +124,11 @@ module.exports = {
     'no-useless-rename': 'error',
     'rest-spread-spacing': ['error', 'never'],
     'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after']
+    'yield-star-spacing': ['error', 'after'],
+    // Node 8 compatibility
+    'node/no-deprecated-api': ['error', {
+      'ignoreModuleItems': ['url.parse', 'url.resolve']
+    }]
   },
   env: {
     node: true,
