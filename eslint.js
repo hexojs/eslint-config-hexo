@@ -45,16 +45,14 @@ module.exports = {
     'no-proto': 'error',
     'no-return-assign': 'error',
     'no-void': 'error',
-    'no-with': 'error',
     'prefer-promise-reject-errors': 'error',
     'radix': 'error',
     'wrap-iife': 'error',
-    'yoda': ['error', 'never'],
+    'yoda': 'error',
     // Strict Mode
     'strict': 'error',
     // Variables
     'no-label-var': 'error',
-    'no-shadow-restricted-names': 'error',
     'no-undef-init': 'error',
     'no-use-before-define': ['error', 'nofunc'],
     // Node.js and CommonJS
@@ -62,16 +60,16 @@ module.exports = {
     'no-mixed-operators': 'error',
     'no-path-concat': 'error',
     // Stylistic Issues
-    'array-bracket-spacing': ['error', 'never'],
-    'block-spacing': ['error', 'always'],
+    'array-bracket-spacing': 'error',
+    'block-spacing': 'error',
     'brace-style': ['error', '1tbs', { allowSingleLine: true }],
-    'comma-dangle': ['error', 'never'],
+    'comma-dangle': 'error',
     'comma-spacing': ['error', {
       before: false,
       after: true
     }],
     'comma-style': ['error', 'last'],
-    'computed-property-spacing': ['error', 'never'],
+    'computed-property-spacing': 'error',
     'eol-last': 'error',
     'func-call-spacing': 'error',
     'indent': ['error', 2, { SwitchCase: 1 }],
@@ -79,8 +77,8 @@ module.exports = {
       beforeColon: false,
       afterColon: true
     }],
-    'keyword-spacing': ['error', {}],
-    'linebreak-style': ['error', 'unix'],
+    'keyword-spacing': 'error',
+    'linebreak-style': 'error',
     'lines-around-comment': ['error', { beforeBlockComment: true }],
     'new-cap': 'error',
     'new-parens': 'error',
@@ -98,22 +96,22 @@ module.exports = {
     }],
     'operator-linebreak': ['error', 'before'],
     'quotes': ['error', 'single'],
-    'semi': ['error', 'always'],
+    'semi': 'error',
     'semi-spacing': ['error', {
       before: false,
       after: true
     }],
-    'space-before-blocks': ['error', 'always'],
+    'space-before-blocks': 'error',
     'space-before-function-paren': ['error', 'never'],
-    'space-in-parens': ['error', 'never'],
+    'space-in-parens': 'error',
     'space-infix-ops': 'error',
     'space-unary-ops': ['error', {
       words: false,
       nonwords: false
     }],
-    'spaced-comment': ['error', 'always'],
-    'template-tag-spacing': ['error', 'never'],
-    'unicode-bom': ['error', 'never'],
+    'spaced-comment': 'error',
+    'template-tag-spacing': 'error',
+    'unicode-bom': 'error',
     // ECMAScript 6
     'arrow-spacing': 'error',
     'generator-star-spacing': ['error', 'after'],
@@ -122,9 +120,9 @@ module.exports = {
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
-    'rest-spread-spacing': ['error', 'never'],
-    'template-curly-spacing': ['error', 'never'],
-    'yield-star-spacing': ['error', 'after'],
+    'rest-spread-spacing': 'error',
+    'template-curly-spacing': 'error',
+    'yield-star-spacing': 'error',
     // Node 8 compatibility
     'node/no-deprecated-api': ['error', {
       'ignoreModuleItems': ['url.parse', 'url.resolve']
