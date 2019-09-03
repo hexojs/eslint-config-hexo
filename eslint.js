@@ -85,15 +85,13 @@ module.exports = {
     'no-array-constructor': 'error',
     'no-extra-label': 'error',
     'no-multiple-empty-lines': 'error',
+    'no-multi-assign': 'error',
     'no-nested-ternary': 'error',
     'no-new-object': 'error',
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'one-var': ['error', {
-      uninitialized: 'always',
-      initialized: 'never'
-    }],
+    'one-var': 'error',
     'operator-linebreak': ['error', 'before'],
     'quotes': ['error', 'single'],
     'semi': 'error',
@@ -113,13 +111,24 @@ module.exports = {
     'template-tag-spacing': 'error',
     'unicode-bom': 'error',
     // ECMAScript 6
-    'arrow-spacing': 'error',
+    'arrow-parens': ['error', 'as-needed'],
+    'arrow-spacing': ['error', { before: true, after: true }],
     'generator-star-spacing': ['error', 'after'],
     'no-confusing-arrow': ['error', { allowParens: true }],
+    'no-const-assign': 'error',
     'no-duplicate-imports': 'error',
     'no-useless-computed-key': 'error',
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
+    'no-var': 'error',
+    'prefer-arrow-callback': ['error', {
+      allowNamedFunctions: false,
+      allowUnboundThis: true
+    }],
+    'prefer-const': ['error', {
+      destructuring: 'any',
+      ignoreReadBeforeAssign: true
+    }],
     'rest-spread-spacing': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
