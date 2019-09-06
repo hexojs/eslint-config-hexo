@@ -10,7 +10,8 @@
   ],
   "main": "eslint.js",
   "files": [
-    "eslint.js"
+    "eslint.js",
+    "test.js"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
