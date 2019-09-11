@@ -115,7 +115,7 @@ module.exports = {
     'unicode-bom': 'error',
     // ECMAScript 6
     'arrow-parens': ['error', 'as-needed'],
-    'arrow-spacing': ['error', { before: true, after: true }],
+    'arrow-spacing': 'error',
     'generator-star-spacing': ['error', 'after'],
     'no-confusing-arrow': ['error', { allowParens: true }],
     'no-const-assign': 'error',
@@ -124,14 +124,8 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
-    'prefer-arrow-callback': ['error', {
-      allowNamedFunctions: false,
-      allowUnboundThis: true
-    }],
-    'prefer-const': ['error', {
-      destructuring: 'any',
-      ignoreReadBeforeAssign: true
-    }],
+    'prefer-arrow-callback': 'error',
+    'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
     'rest-spread-spacing': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
