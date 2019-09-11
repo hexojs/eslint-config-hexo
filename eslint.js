@@ -91,7 +91,10 @@ module.exports = {
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'one-var': 'error',
+    'one-var': ['error', {
+      uninitialized: 'always',
+      initialized: 'never'
+    }],
     'operator-linebreak': ['error', 'before'],
     'quotes': ['error', 'single'],
     'semi': 'error',
