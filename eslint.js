@@ -128,6 +128,10 @@ module.exports = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
+    'object-shorthand': ['error', 'always', {
+      ignoreConstructors: false,
+      avoidQuotes: true
+    }],
     'prefer-arrow-callback': 'error',
     'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
     'rest-spread-spacing': 'error',
