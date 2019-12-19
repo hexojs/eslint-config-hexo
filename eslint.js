@@ -104,7 +104,7 @@ module.exports = {
     }],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', {
-      anonymous: 'never',
+      anonymous: 'always',
       named: 'never',
       asyncArrow: 'always'
     }],
