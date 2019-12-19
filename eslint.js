@@ -118,7 +118,7 @@ module.exports = {
     'template-tag-spacing': 'error',
     'unicode-bom': 'error',
     // ECMAScript 6
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': 'error',
     'arrow-spacing': 'error',
     'generator-star-spacing': ['error', 'after'],
     'no-confusing-arrow': ['error', { allowParens: true }],
