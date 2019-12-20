@@ -3,7 +3,6 @@ module.exports = {
   plugins: ['node'],
   rules: {
     // override recommended
-    'no-console': 'off',
     'no-empty': ['error', { allowEmptyCatch: true }],
     'no-unused-vars': ['error', { args: 'none' }],
     // Possible Errors
