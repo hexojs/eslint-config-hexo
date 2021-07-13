@@ -11,7 +11,9 @@
   "main": "eslint.js",
   "files": [
     "eslint.js",
-    "test.js"
+    "test.js",
+    "ts.js",
+    "ts-test.js"
   ],
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
@@ -22,7 +24,9 @@
     "eslint": ">= 5.0.0"
   },
   "dependencies": {
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-node": "^11.1.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.3",
+    "@typescript-eslint/parser": "^4.28.3"
   },
   "engines": {
     "node": ">=8.6.0"
