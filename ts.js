@@ -6,7 +6,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended'
   ],
   rules: {
-    'node/no-unsupported-features/es-syntax': ['error', { 'ignores': ['modules'] }],
-    'node/no-missing-import': ['error', { 'tryExtensions': ['.js', '.ts'] }]
+    'n/no-unsupported-features/es-syntax': ['error', { 'ignores': ['modules'] }],
+    'n/no-missing-import': ['error', { 'tryExtensions': ['.js', '.ts'] }]
   }
 };
