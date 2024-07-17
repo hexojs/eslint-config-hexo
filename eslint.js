@@ -1,6 +1,6 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:node/recommended'],
-  plugins: ['node'],
+  extends: ['eslint:recommended', 'plugin:n/recommended'],
+  plugins: ['n'],
   rules: {
     // override recommended
     'no-empty': ['error', { allowEmptyCatch: true }],
@@ -132,10 +132,6 @@ module.exports = {
     'rest-spread-spacing': 'error',
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
-    // Node 8 compatibility
-    'node/no-deprecated-api': ['error', {
-      'ignoreModuleItems': ['url.parse', 'url.resolve']
-    }]
   },
   env: {
     node: true,
