@@ -1,9 +1,17 @@
-module.exports = {
-  extends: './eslint.js',
+import eslint from './eslint';
+
+const testConfig = {
+  languageOptions: {
+    globals: {
+      ...globals.mocha
+    },
+  },
   rules: {
     'no-unused-expressions': 'off'
   },
-  env: {
-    mocha: true
-  }
 };
+
+export default [
+  eslint,
+  testConfig,
+];

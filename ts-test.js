@@ -1,9 +1,17 @@
-module.exports = {
-  extends: './ts.js',
+import tsJs from './tsts';
+
+const tsTestConfig = {
+  languageOptions: {
+    globals: {
+      ...globals.mocha
+    },
+  },
   rules: {
     'no-unused-expressions': 'off'
   },
-  env: {
-    mocha: true
-  }
 };
+
+export default [
+  tsJs,
+  tsTestConfig,
+];
