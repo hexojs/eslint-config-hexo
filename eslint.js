@@ -1,5 +1,6 @@
 import nodePlugin from 'eslint-plugin-n';
 import eslintJs from '@eslint/js';
+import globals from 'globals';
 
 const commonConfig = {
   languageOptions: {

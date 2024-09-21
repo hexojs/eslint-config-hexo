@@ -1,4 +1,5 @@
 import eslint from './eslint';
+import globals from 'globals';
 
 const testConfig = {
   languageOptions: {

@@ -1,4 +1,5 @@
 import tsJs from './tsts';
+import globals from 'globals';
 
 const tsTestConfig = {
   languageOptions: {
