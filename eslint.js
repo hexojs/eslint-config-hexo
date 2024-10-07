@@ -10,7 +10,7 @@ const commonConfig = {
     },
   },
   plugins: {
-    nodePlugin,
+    n: nodePlugin,
   },
   rules: {
     // override recommended
