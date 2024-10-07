@@ -15,6 +15,12 @@
     "ts.js",
     "ts-test.js"
   ],
+  "exports": {
+    "./eslint" : "./eslint.js",
+    "./test" : "./test.js",
+    "./ts" : "./ts.js",
+    "./ts-test" : "./ts-test.js"
+  },
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
     "Abner Chou <hi@abnerchou.me> (http://abnerchou.me)"
