@@ -13,6 +13,6 @@ const tsTestConfig = {
 };
 
 export default [
-  tsJs,
+  ...tsJs,
   tsTestConfig,
 ];

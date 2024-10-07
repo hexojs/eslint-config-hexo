@@ -13,6 +13,6 @@ const testConfig = {
 };
 
 export default [
-  eslint,
+  ...eslint,
   testConfig,
 ];

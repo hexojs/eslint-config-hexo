@@ -18,9 +18,9 @@ const tslintConfig = tseslint.config({
   },
 });
 
-export default [
+export default [].concat(
   eslint,
-  ...nodePlugin.configs["flat/mixed-esm-and-cjs"],
+  nodePlugin.configs["flat/mixed-esm-and-cjs"],
   tslintConfig,
   nodeConfig,
-];
+);
