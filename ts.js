@@ -10,9 +10,6 @@ const nodeConfig = {
 }
 
 const tslintConfig = tseslint.config({
-  plugins: {
-    '@typescript-eslint': tseslint.plugin,
-  },
   languageOptions: {
     parser: tseslint.parser,
     parserOptions: {
