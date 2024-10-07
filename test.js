@@ -1,4 +1,4 @@
-import eslint from 'eslint';
+import eslint from './eslint.js';
 import globals from 'globals';
 
 const testConfig = {
