@@ -1,6 +1,6 @@
 import tseslint from 'typescript-eslint';
 import nodePlugin from 'eslint-plugin-n';
-import eslint from './eslint';
+import eslint from 'eslint';
 
 const nodeConfig = {
   rules: {

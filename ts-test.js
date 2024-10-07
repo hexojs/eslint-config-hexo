@@ -1,4 +1,4 @@
-import tsJs from './tsts';
+import tsJs from 'ts.js';
 import globals from 'globals';
 
 const tsTestConfig = {
