@@ -9,9 +9,6 @@ const commonConfig = {
       ...globals.es6,
     },
   },
-  plugins: {
-    n: nodePlugin,
-  },
   rules: {
     // override recommended
     'no-empty': ['error', { allowEmptyCatch: true }],
@@ -148,6 +145,6 @@ const commonConfig = {
 
 export default [
   eslintJs.configs.recommended,
-  ...nodePlugin.configs.recommended,
+  nodePlugin.configs["flat/recommended-script"],
   commonConfig,
 ];
