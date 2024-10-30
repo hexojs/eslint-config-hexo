@@ -9,18 +9,9 @@ const nodeConfig = {
   },
 }
 
-const tslintConfig = tseslint.config({
-  languageOptions: {
-    parser: tseslint.parser,
-    parserOptions: {
-      project: true,
-    },
-  },
-});
-
 export default [].concat(
   eslint,
   nodePlugin.configs["flat/mixed-esm-and-cjs"],
-  tslintConfig,
+  ...tseslint.configs.recommended,
   nodeConfig,
 );
