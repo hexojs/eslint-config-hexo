@@ -1,6 +1,6 @@
-import tseslint from 'typescript-eslint';
-import nodePlugin from 'eslint-plugin-n';
-import eslint from './eslint.js';
+const tseslint = require('typescript-eslint');
+const nodePlugin = require('eslint-plugin-n');
+const eslint = require('./eslint.js');
 
 const nodeConfig = {
   rules: {
@@ -9,7 +9,7 @@ const nodeConfig = {
   },
 }
 
-export default [].concat(
+module.exports = [].concat(
   eslint,
   nodePlugin.configs["flat/mixed-esm-and-cjs"],
   ...tseslint.configs.recommended,

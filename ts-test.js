@@ -1,5 +1,5 @@
-import tsJs from './ts.js';
-import globals from 'globals';
+const tsJs = require('./ts.js');
+const globals = require('globals');
 
 const tsTestConfig = {
   languageOptions: {
@@ -12,7 +12,7 @@ const tsTestConfig = {
   },
 };
 
-export default [
+module.exports = [
   ...tsJs,
   tsTestConfig,
 ];

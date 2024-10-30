@@ -1,6 +1,6 @@
-import nodePlugin from 'eslint-plugin-n';
-import eslintJs from '@eslint/js';
-import globals from 'globals';
+const nodePlugin = require('eslint-plugin-n');
+const eslintJs = require('@eslint/js');
+const globals = require('globals');
 
 const commonConfig = {
   languageOptions: {
@@ -143,7 +143,7 @@ const commonConfig = {
   },
 };
 
-export default [
+module.exports = [
   eslintJs.configs.recommended,
   nodePlugin.configs["flat/recommended-script"],
   commonConfig,

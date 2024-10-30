@@ -1,5 +1,5 @@
-import eslint from './eslint.js';
-import globals from 'globals';
+const eslint = require('./eslint.js');
+const globals = require('globals');
 
 const testConfig = {
   languageOptions: {
@@ -12,7 +12,7 @@ const testConfig = {
   },
 };
 
-export default [
+module.exports = [
   ...eslint,
   testConfig,
 ];
