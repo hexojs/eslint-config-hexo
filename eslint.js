@@ -1,6 +1,14 @@
-module.exports = {
-  extends: ['eslint:recommended', 'plugin:n/recommended'],
-  plugins: ['n'],
+const nodePlugin = require('eslint-plugin-n');
+const eslintJs = require('@eslint/js');
+const globals = require('globals');
+
+const commonConfig = {
+  languageOptions: {
+    globals: {
+      ...globals.node,
+      ...globals.es6,
+    },
+  },
   rules: {
     // override recommended
     'no-empty': ['error', { allowEmptyCatch: true }],
@@ -133,8 +141,10 @@ module.exports = {
     'template-curly-spacing': 'error',
     'yield-star-spacing': 'error',
   },
-  env: {
-    node: true,
-    es6: true
-  }
 };
+
+module.exports = [
+  eslintJs.configs.recommended,
+  nodePlugin.configs["flat/recommended-script"],
+  commonConfig,
+];

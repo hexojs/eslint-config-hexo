@@ -1,9 +1,18 @@
-module.exports = {
-  extends: './ts.js',
+const tsConfig = require('./ts.js');
+const globals = require('globals');
+
+const tsTestConfig = {
+  languageOptions: {
+    globals: {
+      ...globals.mocha
+    },
+  },
   rules: {
     'no-unused-expressions': 'off'
   },
-  env: {
-    mocha: true
-  }
 };
+
+module.exports = [
+  ...tsConfig,
+  tsTestConfig,
+];
