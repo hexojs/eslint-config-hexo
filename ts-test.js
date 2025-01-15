@@ -1,4 +1,4 @@
-const tsJs = require('./ts.js');
+const tsConfig = require('./ts.js');
 const globals = require('globals');
 
 const tsTestConfig = {
@@ -13,6 +13,6 @@ const tsTestConfig = {
 };
 
 module.exports = [
-  ...tsJs,
+  ...tsConfig,
   tsTestConfig,
 ];

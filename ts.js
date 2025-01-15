@@ -1,6 +1,6 @@
-const tseslint = require('typescript-eslint');
+const tsEslint = require('typescript-eslint');
 const nodePlugin = require('eslint-plugin-n');
-const eslint = require('./eslint.js');
+const jsConfig = require('./eslint.js');
 
 const nodeConfig = {
   rules: {
@@ -10,8 +10,8 @@ const nodeConfig = {
 }
 
 module.exports = [].concat(
-  eslint,
+  jsConfig,
   nodePlugin.configs["flat/mixed-esm-and-cjs"],
-  ...tseslint.configs.recommended,
+  ...tsEslint.configs.recommended,
   nodeConfig,
 );

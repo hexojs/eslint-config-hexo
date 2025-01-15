@@ -1,4 +1,4 @@
-const eslint = require('./eslint.js');
+const jsConfig = require('./eslint.js');
 const globals = require('globals');
 const mochaPlugin = require('eslint-plugin-mocha');
 
@@ -18,6 +18,6 @@ const testConfig = {
 };
 
 module.exports = [
-  ...eslint,
+  ...jsConfig,
   testConfig
 ];
