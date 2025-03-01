@@ -111,7 +111,7 @@ const commonConfig = {
     }],
     'space-before-blocks': 'error',
     'space-before-function-paren': ['error', {
-      anonymous: 'never',
+      anonymous: 'always',
       named: 'never',
       asyncArrow: 'always'
     }],
@@ -125,7 +125,7 @@ const commonConfig = {
     'template-tag-spacing': 'error',
     'unicode-bom': 'error',
     // ECMAScript 6
-    'arrow-parens': ['error', 'as-needed'],
+    'arrow-parens': 'error',
     'arrow-spacing': 'error',
     'generator-star-spacing': ['error', 'after'],
     'no-confusing-arrow': ['error', { allowParens: true }],
@@ -135,6 +135,10 @@ const commonConfig = {
     'no-useless-constructor': 'error',
     'no-useless-rename': 'error',
     'no-var': 'error',
+    'object-shorthand': ['error', 'always', {
+      ignoreConstructors: false,
+      avoidQuotes: true
+    }],
     'prefer-arrow-callback': 'error',
     'prefer-const': ['error', { ignoreReadBeforeAssign: true }],
     'rest-spread-spacing': 'error',
