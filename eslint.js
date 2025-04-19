@@ -98,10 +98,7 @@ const commonConfig = {
     'no-trailing-spaces': 'error',
     'no-unneeded-ternary': 'error',
     'no-whitespace-before-property': 'error',
-    'one-var': ['error', {
-      uninitialized: 'always',
-      initialized: 'never'
-    }],
+    'one-var': ['error', 'never'],
     'operator-linebreak': ['error', 'before'],
     'quotes': ['error', 'single'],
     'semi': 'error',
