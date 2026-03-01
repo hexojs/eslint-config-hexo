@@ -8,15 +8,36 @@
     "hexo",
     "eslint-config"
   ],
-  "main": "eslint.js",
   "files": [
-    "lib"
+    "lib",
+    "src"
   ],
   "exports": {
-    "./eslint": "./lib/eslint.js",
-    "./test": "./lib/test.js",
-    "./ts": "./lib/ts.js",
-    "./ts-test": "./lib/ts-test.js"
+    ".": {
+      "import": "./lib/eslint.js",
+      "require": "./lib/eslint.js",
+      "types": "./src/eslint.ts"
+    },
+    "./eslint": {
+      "import": "./lib/eslint.js",
+      "require": "./lib/eslint.js",
+      "types": "./src/eslint.ts"
+    },
+    "./test": {
+      "import": "./lib/test.js",
+      "require": "./lib/test.js",
+      "types": "./src/test.ts"
+    },
+    "./ts": {
+      "import": "./lib/ts.js",
+      "require": "./lib/ts.js",
+      "types": "./src/ts.ts"
+    },
+    "./ts-test": {
+      "import": "./lib/ts-test.js",
+      "require": "./lib/ts-test.js",
+      "types": "./src/ts-test.ts"
+    }
   },
   "author": "Tommy Chen <tommy351@gmail.com> (http://zespia.tw)",
   "maintainers": [
@@ -28,12 +49,21 @@
   },
   "dependencies": {
     "@eslint/js": "^9.17.0",
+    "eslint-plugin-mocha": "^11.2.0",
     "eslint-plugin-n": "^17.15.1",
-    "globals": "^15.14.0",
-    "typescript-eslint": "^8.19.0",
-    "eslint-plugin-mocha": "^10.5.0"
+    "globals": "^16.5.0",
+    "typescript-eslint": "^8.19.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.39.1",
+    "jiti": "^2.6.1",
+    "typescript": "^5.9.3"
   },
   "engines": {
     "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -p src",
+    "lint": "eslint"
   }
 }
